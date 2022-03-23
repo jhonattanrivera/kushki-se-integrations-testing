@@ -8,7 +8,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build-frontend": "cd frontend && ng build",
         "build-backend": "cd backend && npm install",
-        "start": "cd backend && nodemon server.js && cd .. && cd frontend && np serve"
+        "start": "cd frontend && np serve"
     },
     "keywords": [
         "kushki",
