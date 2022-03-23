@@ -4,6 +4,7 @@
   "description": "Backend for Kushki API Requests",
   "main": "server.js",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "nodemon": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-frontend": "cd frontend && ng build",
