@@ -1,0 +1,29 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Backend for Kushki API Requests",
+    "main": "server.js",
+    "scripts": {
+        "heroku-postbuild": "ng build --prod",
+        "nodemon": "nodemon server.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-frontend": "cd frontend && ng build",
+        "build-backend": "cd backend && npm install",
+        "start": "cd backend && nodemon server.js && cd && cd frontend && np serve"
+    },
+    "keywords": [
+        "kushki",
+        "kushki.js",
+        "cajita",
+        "kajita"
+    ],
+    "author": "Jhonattan Rivera",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "node-localstorage": "^2.2.1",
+        "nodemon": "^2.0.15"
+    }
+}
