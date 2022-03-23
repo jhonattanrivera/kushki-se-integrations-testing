@@ -8,7 +8,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build-frontend": "cd frontend && ng build",
         "build-backend": "cd backend && npm install",
-        "start": "cd backend && nodemon server.js && cd && cd frontend && np serve"
+        "start": "cd backend && nodemon server.js && cd .. && cd frontend && np serve"
     },
     "keywords": [
         "kushki",
@@ -18,6 +18,9 @@
     ],
     "author": "Jhonattan Rivera",
     "license": "ISC",
+    "engines": {
+        "node": "16.x"
+    },
     "dependencies": {
         "cors": "^2.8.5",
         "ejs": "^3.1.6",
